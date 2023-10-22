@@ -1,0 +1,13 @@
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\bin\Debug\ProyectoIngSw.exe.config
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\bin\Debug\ProyectoIngSw.exe
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\bin\Debug\ProyectoIngSw.pdb
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\bin\Debug\ProyectoIngSw.xml
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.vbproj.AssemblyReference.cache
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.vbproj.SuggestedBindingRedirects.cache
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.Form1.resources
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.Resources.resources
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.vbproj.GenerateResource.cache
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.vbproj.CoreCompileInputs.cache
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.exe
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.xml
+C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.pdb
