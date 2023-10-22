@@ -1,0 +1,8 @@
+﻿Imports System.Data.SqlClient
+Module ConexionBD
+    Public Function ObtenerConexion() As SqlConnection
+        Dim cadenaConexion As String = "Data Source='CSARPC\SQLEXPRESS';Initial Catalog=ProyectoIngSw;Integrated Security=True"
+        Dim conexion As New SqlConnection(cadenaConexion)
+        Return conexion
+    End Function
+End Module
