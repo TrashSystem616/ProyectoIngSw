@@ -22,93 +22,108 @@ Partial Class Form2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.TurnoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SimulacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CajaYVentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MenuStrip2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'MenuStrip2
         '
-        Me.MenuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TurnoToolStripMenuItem, Me.IndexToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.SimulacionToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.MenuStrip1.Size = New System.Drawing.Size(623, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.MenuStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
+        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5})
+        Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip2.Name = "MenuStrip2"
+        Me.MenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.MenuStrip2.Size = New System.Drawing.Size(334, 24)
+        Me.MenuStrip2.TabIndex = 1
+        Me.MenuStrip2.Text = "MenuStrip2"
         '
-        'TurnoToolStripMenuItem
+        'ToolStripMenuItem1
         '
-        Me.TurnoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentasToolStripMenuItem})
-        Me.TurnoToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.book
-        Me.TurnoToolStripMenuItem.Name = "TurnoToolStripMenuItem"
-        Me.TurnoToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
-        Me.TurnoToolStripMenuItem.Text = "Turno"
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
+        Me.ToolStripMenuItem1.Image = Global.ProyectoIngSw.My.Resources.Resources.book
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(66, 20)
+        Me.ToolStripMenuItem1.Text = "Turno"
         '
-        'VentasToolStripMenuItem
+        'ToolStripMenuItem2
         '
-        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.VentasToolStripMenuItem.Text = "Ventas"
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem2.Text = "Ventas"
         '
-        'IndexToolStripMenuItem
+        'ToolStripMenuItem3
         '
-        Me.IndexToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.cylinder_solid_24
-        Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
-        Me.IndexToolStripMenuItem.Text = "Index"
+        Me.ToolStripMenuItem3.Image = Global.ProyectoIngSw.My.Resources.Resources.cylinder_solid_24
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(64, 20)
+        Me.ToolStripMenuItem3.Text = "Index"
         '
-        'InventarioToolStripMenuItem
+        'ToolStripMenuItem4
         '
-        Me.InventarioToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.clipboard_regular_24
-        Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
-        Me.InventarioToolStripMenuItem.Text = "Inventario"
+        Me.ToolStripMenuItem4.Image = Global.ProyectoIngSw.My.Resources.Resources.clipboard_regular_24
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(88, 20)
+        Me.ToolStripMenuItem4.Text = "Inventario"
         '
-        'SimulacionToolStripMenuItem
+        'ToolStripMenuItem5
         '
-        Me.SimulacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CajaYVentasToolStripMenuItem})
-        Me.SimulacionToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.face_solid_24
-        Me.SimulacionToolStripMenuItem.Name = "SimulacionToolStripMenuItem"
-        Me.SimulacionToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
-        Me.SimulacionToolStripMenuItem.Text = "Simulacion"
+        Me.ToolStripMenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6})
+        Me.ToolStripMenuItem5.Image = Global.ProyectoIngSw.My.Resources.Resources.face_solid_24
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(94, 20)
+        Me.ToolStripMenuItem5.Text = "Simulacion"
         '
-        'CajaYVentasToolStripMenuItem
+        'ToolStripMenuItem6
         '
-        Me.CajaYVentasToolStripMenuItem.Name = "CajaYVentasToolStripMenuItem"
-        Me.CajaYVentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CajaYVentasToolStripMenuItem.Text = "Caja"
+        Me.ToolStripMenuItem6.Image = Global.ProyectoIngSw.My.Resources.Resources.cart_regular_24
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem6.Text = "Caja"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProyectoIngSw.My.Resources.Resources.LogoKFC
+        Me.PictureBox1.Location = New System.Drawing.Point(24, 37)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(285, 235)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(623, 391)
-        Me.Controls.Add(Me.MenuStrip1)
+        Me.ClientSize = New System.Drawing.Size(334, 274)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MenuStrip2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.MenuStrip2.ResumeLayout(False)
+        Me.MenuStrip2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents TurnoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents IndexToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VentasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents InventarioToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SimulacionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CajaYVentasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -154,5 +154,8 @@
   <ItemGroup>
     <None Include="Resources\clipboard-regular-24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-regular-24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
