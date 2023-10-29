@@ -12,3 +12,4 @@ C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug
 C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.xml
 C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.pdb
 C:\Users\chich\Source\Repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.Form2.resources
+C:\Users\chich\source\repos\TrashSystem616\ProyectoIngSw\ProyectoIngSw\obj\Debug\ProyectoIngSw.Form3.resources
