@@ -26,12 +26,14 @@ Partial Class Form2
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InventarioGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarioGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PlanificacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,7 +51,7 @@ Partial Class Form2
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripSeparator1, Me.PlanificacionToolStripMenuItem})
         Me.ToolStripMenuItem1.Image = Global.ProyectoIngSw.My.Resources.Resources.book
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(66, 20)
@@ -70,6 +72,13 @@ Partial Class Form2
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(64, 20)
         Me.ToolStripMenuItem3.Text = "Index"
         '
+        'VentasToolStripMenuItem
+        '
+        Me.VentasToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.cart_regular_24
+        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.VentasToolStripMenuItem.Text = "Ventas"
+        '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InventarioGeneralToolStripMenuItem})
@@ -77,6 +86,13 @@ Partial Class Form2
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
         Me.ToolStripMenuItem4.Size = New System.Drawing.Size(88, 20)
         Me.ToolStripMenuItem4.Text = "Inventario"
+        '
+        'InventarioGeneralToolStripMenuItem
+        '
+        Me.InventarioGeneralToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.book
+        Me.InventarioGeneralToolStripMenuItem.Name = "InventarioGeneralToolStripMenuItem"
+        Me.InventarioGeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.InventarioGeneralToolStripMenuItem.Text = "Inventario General"
         '
         'ToolStripMenuItem5
         '
@@ -103,19 +119,16 @@ Partial Class Form2
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'VentasToolStripMenuItem
+        'ToolStripSeparator1
         '
-        Me.VentasToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.cart_regular_24
-        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.VentasToolStripMenuItem.Text = "Ventas"
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
-        'InventarioGeneralToolStripMenuItem
+        'PlanificacionToolStripMenuItem
         '
-        Me.InventarioGeneralToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.book
-        Me.InventarioGeneralToolStripMenuItem.Name = "InventarioGeneralToolStripMenuItem"
-        Me.InventarioGeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.InventarioGeneralToolStripMenuItem.Text = "Inventario General"
+        Me.PlanificacionToolStripMenuItem.Name = "PlanificacionToolStripMenuItem"
+        Me.PlanificacionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PlanificacionToolStripMenuItem.Text = "Planificacion"
         '
         'Form2
         '
@@ -147,4 +160,6 @@ Partial Class Form2
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents VentasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InventarioGeneralToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents PlanificacionToolStripMenuItem As ToolStripMenuItem
 End Class

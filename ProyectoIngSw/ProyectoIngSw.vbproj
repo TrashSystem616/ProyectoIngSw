@@ -166,5 +166,8 @@
   <ItemGroup>
     <None Include="Resources\cart-regular-24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8pzas.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
