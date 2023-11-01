@@ -25,6 +25,8 @@ Partial Class Form2
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PlanificacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
@@ -32,8 +34,6 @@ Partial Class Form2
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PlanificacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -64,6 +64,18 @@ Partial Class Form2
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem2.Text = "Informe"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        '
+        'PlanificacionToolStripMenuItem
+        '
+        Me.PlanificacionToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.cylinder_solid_24
+        Me.PlanificacionToolStripMenuItem.Name = "PlanificacionToolStripMenuItem"
+        Me.PlanificacionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PlanificacionToolStripMenuItem.Text = "Planificacion"
+        '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentasToolStripMenuItem})
@@ -76,7 +88,7 @@ Partial Class Form2
         '
         Me.VentasToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.cart_regular_24
         Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(108, 22)
         Me.VentasToolStripMenuItem.Text = "Ventas"
         '
         'ToolStripMenuItem4
@@ -91,7 +103,7 @@ Partial Class Form2
         '
         Me.InventarioGeneralToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.book
         Me.InventarioGeneralToolStripMenuItem.Name = "InventarioGeneralToolStripMenuItem"
-        Me.InventarioGeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.InventarioGeneralToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.InventarioGeneralToolStripMenuItem.Text = "Inventario General"
         '
         'ToolStripMenuItem5
@@ -106,7 +118,7 @@ Partial Class Form2
         '
         Me.ToolStripMenuItem6.Image = Global.ProyectoIngSw.My.Resources.Resources.cart_regular_24
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(97, 22)
         Me.ToolStripMenuItem6.Text = "Caja"
         '
         'PictureBox1
@@ -118,17 +130,6 @@ Partial Class Form2
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
-        '
-        'PlanificacionToolStripMenuItem
-        '
-        Me.PlanificacionToolStripMenuItem.Name = "PlanificacionToolStripMenuItem"
-        Me.PlanificacionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.PlanificacionToolStripMenuItem.Text = "Planificacion"
         '
         'Form2
         '

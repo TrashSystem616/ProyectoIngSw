@@ -46,6 +46,13 @@ Public Class Form3
             End If
 
             '14 piezas'
+            If valorColumna = 3 Then
+                ComboBox2.Text = 14 'Valor de las piezas'
+                ComboBox4.Text = 2 'Valor del pure'
+                ComboBox5.Text = 1 'Valor de la ensalada'
+                ComboBox6.Text = 4 'valor de los bisquets'
+                PictureBox1.Image = My.Resources._8pzas
+            End If
 
         End If
     End Sub
