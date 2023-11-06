@@ -237,7 +237,7 @@ Public Class Form4
                 conexion.Close()
             End Using
         Else
-            ' El usuario canceló la acción
+            ' El usuario canceló la acción'
         End If
     End Sub
 End Class
