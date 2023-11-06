@@ -136,6 +136,7 @@ Public Class Form3
         ComboBox9.Text = "" 'valor de las papas familiares'
         ComboBox7.Text = "" 'valor de la hamburgesa'
         ComboBox8.Text = "" 'valor del refresco'
+        TextBox2.Text = ""
         PictureBox1.Image = My.Resources.LogoKFC
     End Sub
 
