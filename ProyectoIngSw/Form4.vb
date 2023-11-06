@@ -15,6 +15,7 @@ Public Class Form4
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+<<<<<<< HEAD
         TextBox1.Text = 0
         TextBox2.Text = 0
         TextBox3.Text = 0
@@ -22,12 +23,25 @@ Public Class Form4
         TextBox5.Text = 0
         TextBox6.Text = 0
         TextBox7.Text = 0
+=======
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim Modificacion As Integer
+<<<<<<< HEAD
         'Piezas'
         ' Verifica si el TextBox está vacío o no contiene un número válido'
+=======
+        ' Verifica si el TextBox está vacío o no contiene un número válido
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         If String.IsNullOrEmpty(TextBox1.Text) Or Not Integer.TryParse(TextBox1.Text, Modificacion) Then
             MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
         Else
@@ -52,6 +66,7 @@ Public Class Form4
                 conexion.Close() ' Cierra la conexión al finalizar
             End Using
         End If
+<<<<<<< HEAD
 
         'Tiras'
         If String.IsNullOrEmpty(TextBox2.Text) Or Not Integer.TryParse(TextBox2.Text, Modificacion) Then
@@ -208,6 +223,8 @@ Public Class Form4
                 conexion.Close() ' Cierra la conexión al finalizar
             End Using
         End If
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

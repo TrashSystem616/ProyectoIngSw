@@ -221,7 +221,10 @@ Partial Class Form4
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(69, 22)
         Me.TextBox1.TabIndex = 9
+<<<<<<< HEAD
         Me.TextBox1.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'TextBox2
         '
@@ -232,7 +235,10 @@ Partial Class Form4
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(69, 22)
         Me.TextBox2.TabIndex = 10
+<<<<<<< HEAD
         Me.TextBox2.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'TextBox3
         '
@@ -243,7 +249,10 @@ Partial Class Form4
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(69, 22)
         Me.TextBox3.TabIndex = 11
+<<<<<<< HEAD
         Me.TextBox3.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'TextBox4
         '
@@ -254,7 +263,10 @@ Partial Class Form4
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(69, 22)
         Me.TextBox4.TabIndex = 12
+<<<<<<< HEAD
         Me.TextBox4.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'TextBox5
         '
@@ -265,7 +277,10 @@ Partial Class Form4
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(69, 22)
         Me.TextBox5.TabIndex = 13
+<<<<<<< HEAD
         Me.TextBox5.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'TextBox6
         '
@@ -276,7 +291,10 @@ Partial Class Form4
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(69, 22)
         Me.TextBox6.TabIndex = 14
+<<<<<<< HEAD
         Me.TextBox6.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'TextBox7
         '
@@ -287,7 +305,10 @@ Partial Class Form4
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(69, 22)
         Me.TextBox7.TabIndex = 15
+<<<<<<< HEAD
         Me.TextBox7.Text = "0"
+=======
+>>>>>>> 11e079cefa9230999ee909684d7c517fc1a8080f
         '
         'Button1
         '
