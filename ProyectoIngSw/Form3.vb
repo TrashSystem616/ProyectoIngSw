@@ -17,7 +17,7 @@ Public Class Form3
         End Using
 
         'Ponemos los datos de fecha en el label'
-        Label7.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+        Label7.Text = DateTime.Now.ToString("HH:mm:ss")
     End Sub
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
