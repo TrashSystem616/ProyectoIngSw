@@ -39,6 +39,10 @@ Partial Class Form3
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
@@ -54,10 +58,6 @@ Partial Class Form3
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -270,6 +270,44 @@ Partial Class Form3
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         '
+        'ComboBox9
+        '
+        Me.ComboBox9.Enabled = False
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Location = New System.Drawing.Point(627, 79)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(73, 21)
+        Me.ComboBox9.TabIndex = 16
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.Enabled = False
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Location = New System.Drawing.Point(627, 50)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(73, 21)
+        Me.ComboBox8.TabIndex = 15
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(534, 80)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(64, 20)
+        Me.Label16.TabIndex = 14
+        Me.Label16.Text = "Papas:"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(534, 48)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(87, 20)
+        Me.Label15.TabIndex = 13
+        Me.Label15.Text = "Refresco:"
+        '
         'ComboBox7
         '
         Me.ComboBox7.Enabled = False
@@ -411,44 +449,6 @@ Partial Class Form3
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(534, 48)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(87, 20)
-        Me.Label15.TabIndex = 13
-        Me.Label15.Text = "Refresco:"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(534, 80)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(64, 20)
-        Me.Label16.TabIndex = 14
-        Me.Label16.Text = "Papas:"
-        '
-        'ComboBox8
-        '
-        Me.ComboBox8.Enabled = False
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(627, 50)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(73, 21)
-        Me.ComboBox8.TabIndex = 15
-        '
-        'ComboBox9
-        '
-        Me.ComboBox9.Enabled = False
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(627, 79)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(73, 21)
-        Me.ComboBox9.TabIndex = 16
         '
         'PictureBox1
         '

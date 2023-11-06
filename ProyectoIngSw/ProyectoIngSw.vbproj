@@ -179,5 +179,8 @@
   <ItemGroup>
     <None Include="Resources\KTiras.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigcrunch.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

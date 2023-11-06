@@ -103,7 +103,7 @@ Partial Class Form2
         '
         Me.InventarioGeneralToolStripMenuItem.Image = Global.ProyectoIngSw.My.Resources.Resources.book
         Me.InventarioGeneralToolStripMenuItem.Name = "InventarioGeneralToolStripMenuItem"
-        Me.InventarioGeneralToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.InventarioGeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.InventarioGeneralToolStripMenuItem.Text = "Inventario General"
         '
         'ToolStripMenuItem5

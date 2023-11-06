@@ -35,6 +35,8 @@ Public Class Form3
                 ComboBox6.Text = 3 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
                 ComboBox9.Text = "" 'valor de las papas '
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = "" 'valor del refresco'
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
@@ -46,6 +48,8 @@ Public Class Form3
                 ComboBox6.Text = 4 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
                 ComboBox9.Text = "" 'valor de las papas '
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = "" 'valor del refresco'
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
@@ -57,6 +61,8 @@ Public Class Form3
                 ComboBox6.Text = 4 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
                 ComboBox9.Text = "" 'valor de las papas '
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = "" 'valor del refresco'
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
@@ -66,13 +72,26 @@ Public Class Form3
                 ComboBox4.Text = "" 'Valor del pure'
                 ComboBox5.Text = "" 'Valor de la ensalada'
                 ComboBox6.Text = "" 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = "" 'valor del refresco'
                 ComboBox3.Text = 9 'valor de las tiras'
-                ComboBox9.Text = 1 'valor de las papas '
+                ComboBox9.Text = 10 'valor de las papas '
                 PictureBox1.Image = My.Resources.KTiras
             End If
 
+            'Hamburgesa big krunch'
+            If valorColumna = 5 Then
+                ComboBox2.Text = "" 'Valor de las piezas'
+                ComboBox4.Text = "" 'Valor del pure'
+                ComboBox5.Text = "" 'Valor de la ensalada'
+                ComboBox6.Text = "" 'valor de los bisquets'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox7.Text = 1 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco'
+                ComboBox9.Text = 1 'valor de las papas '
+                PictureBox1.Image = My.Resources.bigcrunch
 
-
+            End If
 
         End If
     End Sub
@@ -115,6 +134,13 @@ Public Class Form3
         ComboBox6.Text = "" 'valor de los bisquets'
         ComboBox3.Text = "" 'valor de las tiras'
         ComboBox9.Text = "" 'valor de las papas familiares'
+        ComboBox7.Text = "" 'valor de la hamburgesa'
+        ComboBox8.Text = "" 'valor del refresco'
         PictureBox1.Image = My.Resources.LogoKFC
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Dar de alta la venta'
+
     End Sub
 End Class

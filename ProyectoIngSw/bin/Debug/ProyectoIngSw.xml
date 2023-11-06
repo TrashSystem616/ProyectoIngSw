@@ -27,6 +27,11 @@ ProyectoIngSw
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProyectoIngSw.My.Resources.Resources.bigcrunch">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProyectoIngSw.My.Resources.Resources.book">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
