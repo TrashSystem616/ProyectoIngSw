@@ -54,6 +54,10 @@ Partial Class Form3
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -236,12 +240,16 @@ Partial Class Form3
         Me.Panel3.Controls.Add(Me.GroupBox3)
         Me.Panel3.Location = New System.Drawing.Point(12, 294)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(588, 130)
+        Me.Panel3.Size = New System.Drawing.Size(720, 130)
         Me.Panel3.TabIndex = 3
         '
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.SystemColors.Window
+        Me.GroupBox3.Controls.Add(Me.ComboBox9)
+        Me.GroupBox3.Controls.Add(Me.ComboBox8)
+        Me.GroupBox3.Controls.Add(Me.Label16)
+        Me.GroupBox3.Controls.Add(Me.Label15)
         Me.GroupBox3.Controls.Add(Me.ComboBox7)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.ComboBox6)
@@ -258,7 +266,7 @@ Partial Class Form3
         Me.GroupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.GroupBox3.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(580, 120)
+        Me.GroupBox3.Size = New System.Drawing.Size(712, 120)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         '
@@ -404,6 +412,44 @@ Partial Class Form3
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(534, 48)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(87, 20)
+        Me.Label15.TabIndex = 13
+        Me.Label15.Text = "Refresco:"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(534, 80)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(64, 20)
+        Me.Label16.TabIndex = 14
+        Me.Label16.Text = "Papas:"
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.Enabled = False
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Location = New System.Drawing.Point(627, 50)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(73, 21)
+        Me.ComboBox8.TabIndex = 15
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.Enabled = False
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Location = New System.Drawing.Point(627, 79)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(73, 21)
+        Me.ComboBox9.TabIndex = 16
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProyectoIngSw.My.Resources.Resources.LogoKFC
@@ -476,4 +522,8 @@ Partial Class Form3
     Friend WithEvents Label14 As Label
     Friend WithEvents ComboBox6 As ComboBox
     Friend WithEvents Label13 As Label
+    Friend WithEvents ComboBox9 As ComboBox
+    Friend WithEvents ComboBox8 As ComboBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label15 As Label
 End Class

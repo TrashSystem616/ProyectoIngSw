@@ -33,6 +33,8 @@ Public Class Form3
                 ComboBox4.Text = 1 'Valor del pure'
                 ComboBox5.Text = 1 'Valor de la ensalada'
                 ComboBox6.Text = 3 'valor de los bisquets'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox9.Text = "" 'valor de las papas '
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
@@ -42,17 +44,35 @@ Public Class Form3
                 ComboBox4.Text = 1 'Valor del pure'
                 ComboBox5.Text = 1 'Valor de la ensalada'
                 ComboBox6.Text = 4 'valor de los bisquets'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox9.Text = "" 'valor de las papas '
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
-            '14 piezas'
+            '12 piezas'
             If valorColumna = 3 Then
-                ComboBox2.Text = 14 'Valor de las piezas'
-                ComboBox4.Text = 2 'Valor del pure'
+                ComboBox2.Text = 12 'Valor de las piezas'
+                ComboBox4.Text = 1 'Valor del pure'
                 ComboBox5.Text = 1 'Valor de la ensalada'
                 ComboBox6.Text = 4 'valor de los bisquets'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox9.Text = "" 'valor de las papas '
                 PictureBox1.Image = My.Resources._8pzas
             End If
+
+            'Ke tiras love'
+            If valorColumna = 4 Then
+                ComboBox2.Text = "" 'Valor de las piezas'
+                ComboBox4.Text = "" 'Valor del pure'
+                ComboBox5.Text = "" 'Valor de la ensalada'
+                ComboBox6.Text = "" 'valor de los bisquets'
+                ComboBox3.Text = 9 'valor de las tiras'
+                ComboBox9.Text = 1 'valor de las papas '
+                PictureBox1.Image = My.Resources.KTiras
+            End If
+
+
+
 
         End If
     End Sub
@@ -86,5 +106,15 @@ Public Class Form3
         End If
 
         vista.RowFilter = filtroGlobal.ToString()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ComboBox2.Text = "" 'Valor de las piezas'
+        ComboBox4.Text = "" 'Valor del pure'
+        ComboBox5.Text = "" 'Valor de la ensalada'
+        ComboBox6.Text = "" 'valor de los bisquets'
+        ComboBox3.Text = "" 'valor de las tiras'
+        ComboBox9.Text = "" 'valor de las papas familiares'
+        PictureBox1.Image = My.Resources.LogoKFC
     End Sub
 End Class

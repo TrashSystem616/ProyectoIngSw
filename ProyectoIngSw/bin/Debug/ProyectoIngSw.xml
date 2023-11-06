@@ -52,6 +52,11 @@ ProyectoIngSw
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProyectoIngSw.My.Resources.Resources.KTiras">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProyectoIngSw.My.Resources.Resources.LogoKFC">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
