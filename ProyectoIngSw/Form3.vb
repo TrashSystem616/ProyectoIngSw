@@ -142,7 +142,42 @@ Public Class Form3
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Dar de alta la venta'
+        Dim cantidadARestar As Integer ' Declarar la variable
 
+        ' Verifica que el ComboBox tenga un valor de texto no vacío
+        If Not String.IsNullOrEmpty(ComboBox2.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox2.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarPiezas As String = "SELECT Piezas FROM Inventario"
+                        Using commandVerificarPiezas As New SqlCommand(queryVerificarPiezas, conexion)
+                            Dim piezasEnInventario As Integer = CInt(commandVerificarPiezas.ExecuteScalar())
+                            If piezasEnInventario > 0 AndAlso piezasEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Piezas = Piezas - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes piezas en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            Else
+                MessageBox.Show("Por favor, ingrese un valor numérico válido en el ComboBox.")
+            End If
+        Else
+            MessageBox.Show("El ComboBox no puede estar vacío. Por favor, ingrese una cantidad.")
+        End If
     End Sub
 End Class
