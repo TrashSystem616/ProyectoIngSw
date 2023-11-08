@@ -26,20 +26,115 @@ Public Class Form4
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim Modificacion As Integer
-        'Piezas'
-        ' Verifica si el TextBox está vacío o no contiene un número válido
-        If String.IsNullOrEmpty(TextBox1.Text) Or Not Integer.TryParse(TextBox1.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET Piezas = Piezas + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
+
+        ' Muestra una advertencia general
+        Dim respuesta As DialogResult = MessageBox.Show("¿Estás seguro de realizar las modificaciones?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If respuesta = DialogResult.Yes Then
+            'Piezas'
+            If Not String.IsNullOrEmpty(TextBox1.Text) AndAlso Integer.TryParse(TextBox1.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Piezas = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
+            'Tiras'
+            If Not String.IsNullOrEmpty(TextBox2.Text) AndAlso Integer.TryParse(TextBox2.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Tiras = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
+            'BigKrunch'
+            If Not String.IsNullOrEmpty(TextBox3.Text) AndAlso Integer.TryParse(TextBox3.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET BigKrunch = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
+            'Papas'
+            If Not String.IsNullOrEmpty(TextBox4.Text) AndAlso Integer.TryParse(TextBox4.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Papas = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
+            'Pure'
+            If Not String.IsNullOrEmpty(TextBox5.Text) AndAlso Integer.TryParse(TextBox5.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Pure = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
+            'Ensalada'
+            If Not String.IsNullOrEmpty(TextBox6.Text) AndAlso Integer.TryParse(TextBox6.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Ensalada = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
+            'Bisquets'
+            If Not String.IsNullOrEmpty(TextBox7.Text) AndAlso Integer.TryParse(TextBox7.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Bisquets = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
 
             'Mostramos los datos de la tabla productos'
             Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
@@ -53,161 +148,6 @@ Public Class Form4
             End Using
         End If
 
-        'Tiras'
-        If String.IsNullOrEmpty(TextBox2.Text) Or Not Integer.TryParse(TextBox2.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET Tiras = Tiras + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
-
-            'Mostramos los datos de la tabla productos'
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "SELECT * FROM Inventario"
-                Dim adaptador As New SqlDataAdapter(query, conexion)
-                Dim dataSet As New DataSet()
-                adaptador.Fill(dataSet, "Inventario")
-                DataGridView1.DataSource = dataSet.Tables("Inventario")
-                conexion.Close() ' Cierra la conexión al finalizar
-            End Using
-        End If
-
-        'BigKrunch'
-        If String.IsNullOrEmpty(TextBox3.Text) Or Not Integer.TryParse(TextBox3.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET BigKrunch = BigKrunch + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
-
-            'Mostramos los datos de la tabla productos'
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "SELECT * FROM Inventario"
-                Dim adaptador As New SqlDataAdapter(query, conexion)
-                Dim dataSet As New DataSet()
-                adaptador.Fill(dataSet, "Inventario")
-                DataGridView1.DataSource = dataSet.Tables("Inventario")
-                conexion.Close() ' Cierra la conexión al finalizar
-            End Using
-        End If
-
-        'Papas'
-        If String.IsNullOrEmpty(TextBox4.Text) Or Not Integer.TryParse(TextBox4.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET Papas = Papas + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
-
-            'Mostramos los datos de la tabla productos'
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "SELECT * FROM Inventario"
-                Dim adaptador As New SqlDataAdapter(query, conexion)
-                Dim dataSet As New DataSet()
-                adaptador.Fill(dataSet, "Inventario")
-                DataGridView1.DataSource = dataSet.Tables("Inventario")
-                conexion.Close() ' Cierra la conexión al finalizar
-            End Using
-        End If
-
-        'Pure'
-        If String.IsNullOrEmpty(TextBox5.Text) Or Not Integer.TryParse(TextBox5.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET Pure = Pure + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
-
-            'Mostramos los datos de la tabla productos'
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "SELECT * FROM Inventario"
-                Dim adaptador As New SqlDataAdapter(query, conexion)
-                Dim dataSet As New DataSet()
-                adaptador.Fill(dataSet, "Inventario")
-                DataGridView1.DataSource = dataSet.Tables("Inventario")
-                conexion.Close() ' Cierra la conexión al finalizar
-            End Using
-        End If
-
-        'Ensalada'
-        If String.IsNullOrEmpty(TextBox6.Text) Or Not Integer.TryParse(TextBox6.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET Ensalada = Ensalada + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
-
-            'Mostramos los datos de la tabla productos'
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "SELECT * FROM Inventario"
-                Dim adaptador As New SqlDataAdapter(query, conexion)
-                Dim dataSet As New DataSet()
-                adaptador.Fill(dataSet, "Inventario")
-                DataGridView1.DataSource = dataSet.Tables("Inventario")
-                conexion.Close() ' Cierra la conexión al finalizar
-            End Using
-        End If
-
-        'Bisquets'
-        If String.IsNullOrEmpty(TextBox7.Text) Or Not Integer.TryParse(TextBox7.Text, Modificacion) Then
-            MessageBox.Show("Por favor, ingrese un número válido en el TextBox que deseé modificar.")
-        Else
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "UPDATE Inventario SET Bisquets = Bisquets + @Modificacion"
-                Using command As New SqlCommand(query, conexion)
-                    command.Parameters.AddWithValue("@Modificacion", Modificacion)
-                    command.ExecuteNonQuery()
-                End Using
-                conexion.Close()
-            End Using
-
-            'Mostramos los datos de la tabla productos'
-            Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
-                conexion.Open()
-                Dim query As String = "SELECT * FROM Inventario"
-                Dim adaptador As New SqlDataAdapter(query, conexion)
-                Dim dataSet As New DataSet()
-                adaptador.Fill(dataSet, "Inventario")
-                DataGridView1.DataSource = dataSet.Tables("Inventario")
-                conexion.Close() ' Cierra la conexión al finalizar
-            End Using
-        End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
