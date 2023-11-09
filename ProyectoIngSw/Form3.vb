@@ -143,7 +143,7 @@ Public Class Form3
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim cantidadARestar As Integer ' Declarar la variable
-
+        'Esto es para las Piezas'
         ' Verifica que el ComboBox tenga un valor de texto no vacío
         If Not String.IsNullOrEmpty(ComboBox2.Text) Then
             ' Intenta convertir el valor del ComboBox a un número
@@ -152,7 +152,6 @@ Public Class Form3
                 If cantidadARestar > 0 Then
                     Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
                         conexion.Open()
-
                         ' Verificar si la cantidad de piezas en el inventario es suficiente
                         Dim queryVerificarPiezas As String = "SELECT Piezas FROM Inventario"
                         Using commandVerificarPiezas As New SqlCommand(queryVerificarPiezas, conexion)
@@ -173,11 +172,9 @@ Public Class Form3
                 Else
                     MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
                 End If
-            Else
-                MessageBox.Show("Por favor, ingrese un valor numérico válido en el ComboBox.")
             End If
-        Else
-            MessageBox.Show("El ComboBox no puede estar vacío. Por favor, ingrese una cantidad.")
         End If
+        MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
     End Sub
 End Class
