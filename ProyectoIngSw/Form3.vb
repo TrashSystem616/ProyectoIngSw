@@ -162,6 +162,7 @@ Public Class Form3
                                 Using command As New SqlCommand(query, conexion)
                                     command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
                                     command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
                                 End Using
                             Else
                                 MessageBox.Show("No hay suficientes piezas en el inventario para realizar la venta.")
@@ -174,7 +175,5 @@ Public Class Form3
                 End If
             End If
         End If
-        MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
     End Sub
 End Class
