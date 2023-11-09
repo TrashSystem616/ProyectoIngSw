@@ -76,6 +76,21 @@ Public Class Form4
                 End If
             End If
 
+            'Refresco'
+            If Not String.IsNullOrEmpty(TextBox8.Text) AndAlso Integer.TryParse(TextBox8.Text, Modificacion) Then
+                If Modificacion > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        Dim query As String = "UPDATE Inventario SET Refresco = @Modificacion"
+                        Using command As New SqlCommand(query, conexion)
+                            command.Parameters.AddWithValue("@Modificacion", Modificacion)
+                            command.ExecuteNonQuery()
+                        End Using
+                        conexion.Close()
+                    End Using
+                End If
+            End If
+
             'Papas'
             If Not String.IsNullOrEmpty(TextBox4.Text) AndAlso Integer.TryParse(TextBox4.Text, Modificacion) Then
                 If Modificacion > 0 Then

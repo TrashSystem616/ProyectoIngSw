@@ -165,7 +165,7 @@ Public Class Form3
                                     MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
                                 End Using
                             Else
-                                MessageBox.Show("No hay suficientes piezas en el inventario para realizar la venta.")
+                                MessageBox.Show("No hay suficientes Piezas en el inventario para realizar la venta.")
                             End If
                         End Using
                         conexion.Close()
@@ -175,5 +175,231 @@ Public Class Form3
                 End If
             End If
         End If
+
+        'Esto es para las Tiras'
+        If Not String.IsNullOrEmpty(ComboBox3.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox3.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarTiras As String = "SELECT Tiras FROM Inventario"
+                        Using commandVerificarTiras As New SqlCommand(queryVerificarTiras, conexion)
+                            Dim TirasEnInventario As Integer = CInt(commandVerificarTiras.ExecuteScalar())
+                            If TirasEnInventario > 0 AndAlso TirasEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Tiras = Tiras - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes Tiras en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+        'Esto es para el Pure'
+        If Not String.IsNullOrEmpty(ComboBox4.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox4.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarPure As String = "SELECT Pure FROM Inventario"
+                        Using commandVerificarPure As New SqlCommand(queryVerificarPure, conexion)
+                            Dim PureEnInventario As Integer = CInt(commandVerificarPure.ExecuteScalar())
+                            If PureEnInventario > 0 AndAlso PureEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Pure = Pure - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes Pure en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+        'Esto es para la Ensalada'
+        If Not String.IsNullOrEmpty(ComboBox5.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox5.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarEnsalada As String = "SELECT Ensalada FROM Inventario"
+                        Using commandVerificarEnsalada As New SqlCommand(queryVerificarEnsalada, conexion)
+                            Dim EnsaladaEnInventario As Integer = CInt(commandVerificarEnsalada.ExecuteScalar())
+                            If EnsaladaEnInventario > 0 AndAlso EnsaladaEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Ensalada = Ensalada - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes Ensalada en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+        'Esto es para los bisquets'
+        If Not String.IsNullOrEmpty(ComboBox6.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox6.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarBisquets As String = "SELECT Bisquets FROM Inventario"
+                        Using commandVerificarBisquets As New SqlCommand(queryVerificarBisquets, conexion)
+                            Dim BisquetsEnInventario As Integer = CInt(commandVerificarBisquets.ExecuteScalar())
+                            If BisquetsEnInventario > 0 AndAlso BisquetsEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Bisquets = Bisquets - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes Bisquets en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+        'Esto es para las hamburgesas'
+        If Not String.IsNullOrEmpty(ComboBox7.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox7.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarHamburgesa As String = "SELECT BigKrunch FROM Inventario"
+                        Using commandVerificarHamburgesa As New SqlCommand(queryVerificarHamburgesa, conexion)
+                            Dim HamburgesaEnInventario As Integer = CInt(commandVerificarHamburgesa.ExecuteScalar())
+                            If HamburgesaEnInventario > 0 AndAlso HamburgesaEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET BigKrunch = BigKrunch - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes BigKrunch en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+        'Esto es para el Refresco'
+        If Not String.IsNullOrEmpty(ComboBox8.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox8.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarRefresco As String = "SELECT Refresco FROM Inventario"
+                        Using commandVerificarRefresco As New SqlCommand(queryVerificarRefresco, conexion)
+                            Dim RefrescoEnInventario As Integer = CInt(commandVerificarRefresco.ExecuteScalar())
+                            If RefrescoEnInventario > 0 AndAlso RefrescoEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Refresco = Refresco  - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes Refrescos en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+        'Esto es para las Papas'
+        If Not String.IsNullOrEmpty(ComboBox9.Text) Then
+            ' Intenta convertir el valor del ComboBox a un número
+            If Integer.TryParse(ComboBox9.Text, cantidadARestar) Then
+                ' Verifica si la cantidad a restar es mayor que cero
+                If cantidadARestar > 0 Then
+                    Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
+                        conexion.Open()
+                        ' Verificar si la cantidad de piezas en el inventario es suficiente
+                        Dim queryVerificarPapas As String = "SELECT Papas FROM Inventario"
+                        Using commandVerificarPapas As New SqlCommand(queryVerificarPapas, conexion)
+                            Dim PapasEnInventario As Integer = CInt(commandVerificarPapas.ExecuteScalar())
+                            If PapasEnInventario > 0 AndAlso PapasEnInventario >= cantidadARestar Then
+                                ' Restar la cantidad ingresada a la columna correspondiente en la tabla Inventario
+                                Dim query As String = "UPDATE Inventario SET Papas = Papas  - @CantidadARestar"
+                                Using command As New SqlCommand(query, conexion)
+                                    command.Parameters.AddWithValue("@CantidadARestar", cantidadARestar)
+                                    command.ExecuteNonQuery()
+                                    MessageBox.Show("¡Venta exitosa! La venta se ha realizado con éxito.", "Venta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                End Using
+                            Else
+                                MessageBox.Show("No hay suficientes Papas en el inventario para realizar la venta.")
+                            End If
+                        End Using
+                        conexion.Close()
+                    End Using
+                Else
+                    MessageBox.Show("La cantidad ingresada debe ser mayor que cero.")
+                End If
+            End If
+        End If
+
+
     End Sub
 End Class
