@@ -29,6 +29,8 @@ Partial Class Form4
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
@@ -46,8 +48,6 @@ Partial Class Form4
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,7 +61,7 @@ Partial Class Form4
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Location = New System.Drawing.Point(7, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(541, 161)
+        Me.Panel1.Size = New System.Drawing.Size(588, 161)
         Me.Panel1.TabIndex = 0
         '
         'GroupBox1
@@ -72,7 +72,7 @@ Partial Class Form4
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(5, 7)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(529, 146)
+        Me.GroupBox1.Size = New System.Drawing.Size(574, 146)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
@@ -92,10 +92,10 @@ Partial Class Form4
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(10, 39)
+        Me.DataGridView1.Location = New System.Drawing.Point(4, 39)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(506, 53)
+        Me.DataGridView1.Size = New System.Drawing.Size(564, 73)
         Me.DataGridView1.TabIndex = 5
         '
         'Label1
@@ -114,7 +114,7 @@ Partial Class Form4
         Me.Panel2.Controls.Add(Me.GroupBox2)
         Me.Panel2.Location = New System.Drawing.Point(7, 179)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(541, 169)
+        Me.Panel2.Size = New System.Drawing.Size(588, 169)
         Me.Panel2.TabIndex = 1
         '
         'GroupBox2
@@ -141,9 +141,30 @@ Partial Class Form4
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Location = New System.Drawing.Point(5, 7)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(529, 154)
+        Me.GroupBox2.Size = New System.Drawing.Size(574, 154)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.Location = New System.Drawing.Point(443, 76)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(69, 22)
+        Me.TextBox8.TabIndex = 18
+        Me.TextBox8.Text = "0"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(353, 76)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(87, 20)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "Refresco:"
         '
         'Button2
         '
@@ -320,33 +341,12 @@ Partial Class Form4
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Modificacion:"
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(353, 76)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(87, 20)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "Refresco:"
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.SystemColors.Window
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(443, 76)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(69, 22)
-        Me.TextBox8.TabIndex = 18
-        Me.TextBox8.Text = "0"
-        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkRed
-        Me.ClientSize = New System.Drawing.Size(553, 356)
+        Me.ClientSize = New System.Drawing.Size(603, 356)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow

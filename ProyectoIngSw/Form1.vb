@@ -19,16 +19,21 @@ Public Class Form1
                     Dim count As Integer = CInt(command.ExecuteScalar())
 
                     If count > 0 Then
-                        ' Realizar una consulta adicional para obtener el nombre del usuario
-                        Dim queryNombre As String = "SELECT NombreUsuario FROM Usuarios WHERE Contraseña = @Contraseña"
+                        ' Realizar una consulta adicional para obtener el nombre del usuario y el GerenteID
+                        Dim queryNombre As String = "SELECT NombreUsuario, GerenteID FROM Usuarios WHERE Contraseña = @Contraseña"
                         Using commandNombre As New SqlCommand(queryNombre, conexion)
                             commandNombre.Parameters.AddWithValue("@Contraseña", contraseña)
-                            usuario = CStr(commandNombre.ExecuteScalar())
+                            Dim reader As SqlDataReader = commandNombre.ExecuteReader()
+
+                            If reader.Read() Then
+                                usuario = CStr(reader("NombreUsuario"))
+                                ' Asignar el valor del GerenteID a la variable global
+                                VariablesGlobales.ID = CInt(reader("GerenteID"))
+                            End If
                         End Using
 
-                        MessageBox.Show("¡Bienvenido, " & usuario & "!")
+                        MessageBox.Show("¡Bienvenido, " & usuario & "!" & " ID " & VariablesGlobales.ID)
                         Form2.ShowDialog()
-
                     Else
                         MessageBox.Show("Contraseña incorrecta. Inténtalo de nuevo.")
                     End If

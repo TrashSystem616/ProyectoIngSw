@@ -173,7 +173,7 @@ Public Class Form4
             ' El usuario confirmó la acción, procede a actualizar los valores
             Using conexion As SqlConnection = ConexionBD.ObtenerConexion()
                 conexion.Open()
-                Dim queryActualizar As String = "UPDATE Inventario SET Piezas = 0, Tiras = 0, BigKrunch = 0, Papas = 0, Pure = 0, Ensalada = 0, Bisquets = 0"
+                Dim queryActualizar As String = "UPDATE Inventario SET Piezas = 0, Tiras = 0, BigKrunch = 0, Papas = 0, Pure = 0, Ensalada = 0, Bisquets = 0, Refresco= 0"
                 Using commandActualizar As New SqlCommand(queryActualizar, conexion)
                     commandActualizar.ExecuteNonQuery()
                 End Using
