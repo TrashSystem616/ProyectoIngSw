@@ -63,6 +63,86 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _2piezas() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("2piezas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _2tiras() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("2tiras", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _3piezas() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("3piezas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _3tiras() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("3tiras", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _3tiras1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("3tiras1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _4piezas() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("4piezas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _4tiras() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("4tiras", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _4tiras1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("4tiras1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property _8pzas() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("8pzas", resourceCulture)

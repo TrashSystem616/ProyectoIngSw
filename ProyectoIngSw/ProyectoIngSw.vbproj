@@ -183,5 +183,23 @@
   <ItemGroup>
     <None Include="Resources\bigcrunch.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2piezas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3piezas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4piezas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2tiras.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4tiras1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3tiras1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

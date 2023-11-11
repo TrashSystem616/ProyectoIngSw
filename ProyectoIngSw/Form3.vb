@@ -30,66 +30,171 @@ Public Class Form3
             If valorColumna = 1 Then
                 ' Llena los ComboBoxes con los valores obtenidos
                 ComboBox2.Text = 8 'Valor de las piezas'
-                ComboBox4.Text = 1 'Valor del pure'
-                ComboBox5.Text = 1 'Valor de la ensalada'
-                ComboBox6.Text = 3 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
-                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox4.Text = 1 'Valor del pure familiar'
+                ComboBox5.Text = 1 'Valor de la ensalada familiar'
+                ComboBox6.Text = 3 'valor de los bisquets'
                 ComboBox7.Text = "" 'valor de la hamburgesa'
-                ComboBox8.Text = "" 'valor del refresco'
+                ComboBox8.Text = "" 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = "" 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
             '10 piezas'
             If valorColumna = 2 Then
                 ComboBox2.Text = 10 'Valor de las piezas'
-                ComboBox4.Text = 1 'Valor del pure'
-                ComboBox5.Text = 1 'Valor de la ensalada'
-                ComboBox6.Text = 4 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
-                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox4.Text = 1 'Valor del pure familiar'
+                ComboBox5.Text = 1 'Valor de la ensalada familiar'
+                ComboBox6.Text = 3 'valor de los bisquets'
                 ComboBox7.Text = "" 'valor de la hamburgesa'
-                ComboBox8.Text = "" 'valor del refresco'
+                ComboBox8.Text = "" 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = "" 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
             '12 piezas'
             If valorColumna = 3 Then
                 ComboBox2.Text = 12 'Valor de las piezas'
-                ComboBox4.Text = 1 'Valor del pure'
-                ComboBox5.Text = 1 'Valor de la ensalada'
-                ComboBox6.Text = 4 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
-                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox4.Text = 1 'Valor del pure familiar'
+                ComboBox5.Text = 1 'Valor de la ensalada familiar'
+                ComboBox6.Text = 3 'valor de los bisquets'
                 ComboBox7.Text = "" 'valor de la hamburgesa'
-                ComboBox8.Text = "" 'valor del refresco'
+                ComboBox8.Text = "" 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = "" 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
                 PictureBox1.Image = My.Resources._8pzas
             End If
 
             'Ke tiras love'
             If valorColumna = 4 Then
                 ComboBox2.Text = "" 'Valor de las piezas'
-                ComboBox4.Text = "" 'Valor del pure'
-                ComboBox5.Text = "" 'Valor de la ensalada'
+                ComboBox3.Text = 9 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
                 ComboBox6.Text = "" 'valor de los bisquets'
                 ComboBox7.Text = "" 'valor de la hamburgesa'
-                ComboBox8.Text = "" 'valor del refresco'
-                ComboBox3.Text = 9 'valor de las tiras'
-                ComboBox9.Text = 10 'valor de las papas '
+                ComboBox8.Text = "" 'valor del refresco de lata'
+                ComboBox9.Text = 1 'valor de las papas '
+                ComboBox10.Text = "" 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
                 PictureBox1.Image = My.Resources.KTiras
             End If
 
             'Hamburgesa big krunch'
             If valorColumna = 5 Then
                 ComboBox2.Text = "" 'Valor de las piezas'
-                ComboBox4.Text = "" 'Valor del pure'
-                ComboBox5.Text = "" 'Valor de la ensalada'
-                ComboBox6.Text = "" 'valor de los bisquets'
                 ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = "" 'valor de los bisquets'
                 ComboBox7.Text = 1 'valor de la hamburgesa'
-                ComboBox8.Text = 1 'valor del refresco'
+                ComboBox8.Text = 1 'valor del refresco de lata'
                 ComboBox9.Text = 1 'valor de las papas '
+                ComboBox10.Text = "" 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
                 PictureBox1.Image = My.Resources.bigcrunch
+
+            End If
+
+            'Paquete de 2 Piezas'
+            If valorColumna = 6 Then
+                ComboBox2.Text = 2 'Valor de las piezas'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = 1 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = 1 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
+                PictureBox1.Image = My.Resources._2piezas
+
+            End If
+
+            'Paquete de 3 Piezas'
+            If valorColumna = 7 Then
+                ComboBox2.Text = 3 'Valor de las piezas'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = 1 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = 1 'Valor del pure individual'
+                ComboBox11.Text = 1 'Valor de la ensalada individual'
+                PictureBox1.Image = My.Resources._3piezas
+
+            End If
+
+            'Paquete de 4 Piezas'
+            If valorColumna = 8 Then
+                ComboBox2.Text = 4 'Valor de las piezas'
+                ComboBox3.Text = "" 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = 1 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = 1 'Valor del pure individual'
+                ComboBox11.Text = 1 'Valor de la ensalada individual'
+                PictureBox1.Image = My.Resources._4piezas
+
+            End If
+
+            'Paquete de 2 Tiras'
+            If valorColumna = 9 Then
+                ComboBox2.Text = "" 'Valor de las piezas'
+                ComboBox3.Text = 2 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = 1 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = 1 'Valor del pure individual'
+                ComboBox11.Text = "" 'Valor de la ensalada individual'
+                PictureBox1.Image = My.Resources._2tiras
+
+            End If
+
+            'Paquete de 3 Tiras'
+            If valorColumna = 10 Then
+                ComboBox2.Text = "" 'Valor de las piezas'
+                ComboBox3.Text = 3 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = 1 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = 1 'Valor del pure individual'
+                ComboBox11.Text = 1 'Valor de la ensalada individual'
+                PictureBox1.Image = My.Resources._3tiras
+
+            End If
+
+            If valorColumna = 11 Then
+                ComboBox2.Text = "" 'Valor de las piezas'
+                ComboBox3.Text = 4 'valor de las tiras'
+                ComboBox4.Text = "" 'Valor del pure familiar'
+                ComboBox5.Text = "" 'Valor de la ensalada familiar'
+                ComboBox6.Text = 1 'valor de los bisquets'
+                ComboBox7.Text = "" 'valor de la hamburgesa'
+                ComboBox8.Text = 1 'valor del refresco de lata'
+                ComboBox9.Text = "" 'valor de las papas '
+                ComboBox10.Text = 1 'Valor del pure individual'
+                ComboBox11.Text = 1 'Valor de la ensalada individual'
+                PictureBox1.Image = My.Resources._4tiras
 
             End If
 
@@ -208,7 +313,7 @@ Public Class Form3
             End If
         End If
 
-        'Esto es para el Pure'
+        'Esto es para el Pure Familiar'
         If Not String.IsNullOrEmpty(ComboBox4.Text) Then
             ' Intenta convertir el valor del ComboBox a un número
             If Integer.TryParse(ComboBox4.Text, cantidadARestar) Then
@@ -399,7 +504,6 @@ Public Class Form3
                 End If
             End If
         End If
-
 
     End Sub
 End Class
